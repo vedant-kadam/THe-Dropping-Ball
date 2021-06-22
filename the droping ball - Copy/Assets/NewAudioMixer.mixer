@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NewAudioMixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: 9072ebebe559b7f4991da2b8380375b2
+    name: volume
+  m_AudioMixerGroupViews:
+  - guids:
+    - aa97da3453a57ea4f906e3a18914068f
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: aa97da3453a57ea4f906e3a18914068f
+  m_Children: []
+  m_Volume: 9072ebebe559b7f4991da2b8380375b2
+  m_Pitch: 24dbfd9aae843b9489e2afa59b7ac970
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 9ca943076e4a2534c9559936ec231199
+  m_EffectName: Attenuation
+  m_MixLevel: e995accb9ec97da49a4075ffa049dd72
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: f2d5f5397b5297d4283ae2490c3d6af0
+  m_FloatValues:
+    cc43cb61dcfd2074291238f8e646d823: 2
+    453e430697cdcae45ac8983eebb3d315: 0.1
+    d672efe81ea07ab4d975d1841ebbef23: -1
+    c07070e909a0c8f45a479ee081f7142d: 0.1
+    7e13543bcc309de4180c113d86ad71a3: -10
+    9072ebebe559b7f4991da2b8380375b2: 0.025578514
+    1a70c2ed02c046f429b7457fdf15ec28: 10
+  m_TransitionOverrides: {}
